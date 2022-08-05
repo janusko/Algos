@@ -43,6 +43,24 @@ function zipArraysIntoMap(arr1, arr2) {
     }
     return obj
 }
+
+
+// Spencer's solution:
+
+// function isPalindrome(str) { 
+//     if (str.length < 2) return true;
+//     let start = 0;
+//     let end = str.length - 1;
+//     while (start < end) {
+//         if (str[start] !== str[end]) return false;
+//         start++;
+//         end--;
+//     }
+//     return true;
+// }
+
+
+
 console.log(zipArraysIntoMap(keys1, vals1)) // expected: { flavor: 'chocolate', size: 10, is_delicious: true } (order may vary)
 console.log(zipArraysIntoMap(keys2, vals2)) // expected: {} 
 console.log(zipArraysIntoMap(keys3, vals3)) // expected: { name: 'Gyarados', number: 130, type: 'water/flying', evolves_from: 'Magikarp' } (order may vary)
