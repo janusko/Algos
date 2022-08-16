@@ -51,6 +51,29 @@ function interleaveArrays(arr1, arr2) {
     }
     return newArr
 }
+
+// Devin
+// function interleaveArrays(arr1, arr2) {
+//     if (arr1.length >= arr2.length) {
+//         first = arr1
+//         second = arr2
+//     }
+//     else {
+//         first = arr2
+//         second = arr1
+//     }
+//     result = []
+//     flag = 0
+//     for (var i = 0; i < second.length; i++) {
+//         result.push(arr1[i])
+//         result.push(arr2[i])
+//         flag++
+//     }
+//     for (var i = flag; i < first.length; i++) {
+//         result.push(first[i])
+//     }
+//     return result
+// }
 console.log(interleaveArrays(arrA1, arrB1));
 console.log(interleaveArrays(arrA2, arrB2));
 console.log(interleaveArrays(arrA3, arrB3));
