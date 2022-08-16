@@ -74,6 +74,28 @@ function interleaveArrays(arr1, arr2) {
 //     }
 //     return result
 // }
+
+
+// Joe
+
+// function interleaveArrays(arr1, arr2) {
+//     let result = []
+//     if(arr1.length > arr2.length){
+//         len = arr1.length;
+//     }
+//     else{
+//         len = arr2.length
+//     }
+//     for(var i = 0; i < len; i++){
+//         if(i < arr1.length){
+//             result.push(arr1[i])
+//         }
+//         if(i < arr2.length){
+//             result.push(arr2[i])
+//         }
+//     }
+//     return result
+// }
 console.log(interleaveArrays(arrA1, arrB1));
 console.log(interleaveArrays(arrA2, arrB2));
 console.log(interleaveArrays(arrA3, arrB3));
