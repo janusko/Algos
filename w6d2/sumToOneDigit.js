@@ -27,12 +27,26 @@ const expectedD = 9;
  * @returns {number} One digit.
  */
 function sumToOneDigit(num) {
-    if (num < 10) {
-        return num;
+    // Base case
+    // if (num < 10) {
+    //     return num;
+    // }
+    // // Sanitize
+    // const lastDigit = num % 10;
+    // const remainingNum = Math.floor(num / 10);
+    // // Recursion
+    // return sumToOneDigit(lastDigit + sumToOneDigit(remainingNum));
+
+    function sumToOneDigit(num) {
+        //Your code here
+        if (num < 10) return num
+        numStr = num.toString()
+        processedNum = 0
+        for (let i = 0; i<numStr.length;i++){
+            processedNum += parseInt(numStr[i])
+        }
+        return sumToOneDigit(processedNum)
     }
-    const lastDigit = num % 10;
-    const remainingNum = Math.floor(num / 10);
-    return sumToOneDigit(lastDigit + sumToOneDigit(remainingNum));
 
     console.log(sumToOneDigit(numA)) // 5
     console.log(sumToOneDigit(numB)) // 1
