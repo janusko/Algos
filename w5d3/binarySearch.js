@@ -54,22 +54,22 @@ const expected4 = 4;
 
 
 
-function countAdjacentDupes(arr, idx) {
-    let count = 1;
-    let elem = arr[idx];
-    let right = idx + 1;
-    let left = idx - 1;
-    while (arr[right] === elem) {
-        count++;
-        right++;
-    }
-    while (arr[left] === elem) {
-        count++;
-        left--;
-    }
-    return count;
+// function countAdjacentDupes(arr, idx) {
+//     let count = 1;
+//     let elem = arr[idx];
+//     let right = idx + 1;
+//     let left = idx - 1;
+//     while (arr[right] === elem) {
+//         count++;
+//         right++;
+//     }
+//     while (arr[left] === elem) {
+//         count++;
+//         left--;
+//     }
+//     return count;
 
-}
+// }
 
 
 console.log(binarySearch(nums1, searchNum1)); // false
